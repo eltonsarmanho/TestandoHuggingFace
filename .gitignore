@@ -1,0 +1,11 @@
+# Ignorar todos os arquivos exceto os arquivos .py principais e a pasta Dataset
+
+# Ignora tudo
+
+.env
+# Não ignora arquivos .py principais
+!*.py
+!requirements.txt
+# Não ignora a pasta Dataset e seu conteúdo
+!Dataset/
+!Dataset/**
