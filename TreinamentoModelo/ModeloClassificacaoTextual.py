@@ -9,13 +9,12 @@ from transformers import Trainer, TrainingArguments
 load_dotenv(override=True)
 
 # Caminho para o dataset
-caminho = pathlib.Path(__file__).parent.resolve()
-caminho = str(caminho) + '/Dataset/DatasetSentimento.csv'
+caminho = pathlib.Path(__file__).parent.parent.resolve()
 
 # Carregar o conjunto de dados CSV
 dataset = load_dataset('csv', data_files={
-    'train': '/home/nees/Documents/VSCodigo/TestandoHuggingFace/Dataset/DatasetSentimento.csv',
-    'test': '/home/nees/Documents/VSCodigo/TestandoHuggingFace/Dataset/DatasetSentimentoTeste.csv'
+    'train': str(caminho) + '/Dataset/DatasetSentimento.csv',
+    'test': str(caminho) + '/Dataset/DatasetSentimentoTeste.csv'
 })
 
 # Exibir os primeiros exemplos do conjunto de dados
@@ -45,7 +44,6 @@ tokenized_datasets = encoded_datasets.map(tokenize_function, batched=True)
 
 # Configurar argumentos de treinamento
 training_args = TrainingArguments(
-    output_dir="./results",
     learning_rate=2e-5,
     per_device_train_batch_size=16,
     per_device_eval_batch_size=16,
