@@ -14,8 +14,8 @@ caminho = str(caminho) + '/Dataset/DatasetSentimento.csv'
 
 # Carregar o conjunto de dados CSV
 dataset = load_dataset('csv', data_files={
-    'train': '/home/eltonss/Documents/VSCodigo/HuggingFace/Dataset/DatasetSentimento.csv',
-    'test': '/home/eltonss/Documents/VSCodigo/HuggingFace/Dataset/DatasetSentimentoTeste.csv'
+    'train': '/home/nees/Documents/VSCodigo/TestandoHuggingFace/Dataset/DatasetSentimento.csv',
+    'test': '/home/nees/Documents/VSCodigo/TestandoHuggingFace/Dataset/DatasetSentimentoTeste.csv'
 })
 
 # Exibir os primeiros exemplos do conjunto de dados
