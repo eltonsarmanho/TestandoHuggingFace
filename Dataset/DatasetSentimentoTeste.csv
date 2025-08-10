@@ -1,0 +1,16 @@
+texto,label
+"Chegou no prazo, e o produto é de excelente qualidade.",positivo
+"O produto veio quebrado, estou muito insatisfeito.",negativo
+"O serviço foi normal, nada de especial a comentar.",neutro
+"A equipe de suporte é muito atenciosa e prestativa.",positivo
+"O produto é bom, mas a embalagem deixou a desejar.",neutro
+"Demorou muito para chegar, e ainda veio o produto errado.",negativo
+"Funciona perfeitamente! Recomendo a compra.",positivo
+"Tive uma experiência péssima com essa loja.",negativo
+"A qualidade é boa, mas o preço é um pouco elevado.",neutro
+"Comprei para um amigo e ele adorou! Ótimo presente.",positivo
+"O site é confuso, e o processo de checkout é complicado.",negativo
+"A entrega foi rápida, mas o produto não é o que eu esperava.",neutro
+"Excelente atendimento e produto de alta qualidade.",positivo
+"Fiquei esperando por horas e ninguém me atendeu.",negativo
+"É um produto ok, nada que me surpreenda.",neutro
