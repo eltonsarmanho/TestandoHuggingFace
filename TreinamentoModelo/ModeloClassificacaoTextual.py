@@ -35,6 +35,11 @@ encoded_datasets = dataset.map(encode_labels)
 tokenizer = AutoTokenizer.from_pretrained("distilbert-base-multilingual-cased")
 model = AutoModelForSequenceClassification.from_pretrained("distilbert-base-multilingual-cased", num_labels=3)  # Ajuste o número de rótulos
 
+## Ajustar token de padding se necessário
+if tokenizer.pad_token is None:
+    tokenizer.pad_token = tokenizer.eos_token
+    model.config.pad_token_id = model.config.eos_token_id
+
 # Função para tokenizar os textos
 def tokenize_function(examples):
     return tokenizer(examples['texto'], padding="max_length", truncation=True)
