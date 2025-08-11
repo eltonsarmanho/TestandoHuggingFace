@@ -4,13 +4,10 @@ from dotenv import load_dotenv
 
 load_dotenv(override=True)
 
-
-# Testar algumas frases
 frases = [
     "Adorei o produto!",
     "Não gostei do atendimento.",
-    "Produto ok, normal."
-    'Produto mediano, sem mais.'
+    "Produto ok, normal. Produto mediano, sem mais."
 ]
 modelo = './fine_tuned_model'  # Caminho para o modelo treinado
 
