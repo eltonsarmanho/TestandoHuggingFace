@@ -4,7 +4,10 @@ from dotenv import load_dotenv
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 from datasets import load_dataset
 import pathlib
-from transformers import Trainer, TrainingArguments
+from transformers import Trainer, TrainingArguments, EarlyStoppingCallback
+from sklearn.metrics import accuracy_score, precision_recall_fscore_support
+import numpy as np
+import torch
 
 load_dotenv(override=True)
 

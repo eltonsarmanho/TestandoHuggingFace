@@ -3,3 +3,6 @@ torch
 datasets
 ollama
 accelerate>=0.26.0
+scikit-learn
+numpy
+python-dotenv
